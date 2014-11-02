@@ -3,11 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>
-      {% if is_login %}Login
-      {% elif is_tag %}{{ tag }}
-      {% elif post %}{{ post.title }}
-      {% endif %}
-      | {{ site.name }}
+      {{ site.name }}
     </title>
 
     {{ header_meta }}
@@ -107,7 +103,6 @@
           <div class="row post">
             <div class="span6">
               <h2><a href="{{ post.permalink }}">{{ post.title }}</a></h2>
-              <p class="muted">Posted on {{ post.created_at|format_date }} / Updated on {{ post.updated_at|format_date }}</p>
 
               <div class="post-content" data-type-cleanup="true">
                 {{ post.content }}
