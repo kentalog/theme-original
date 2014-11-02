@@ -130,7 +130,7 @@
 
           <div class="post">
             <h1>{{ post.title }}</h1>
-            <p class="muted">Posted on {{ post.created_at|format_date }} / Updated on {{ post.updated_at|format_date }}</p>
+            <p class="muted">Posted on {{ post.created_at|striptags|truncate(10,true,'')|replace("-","/") }} / Updated on {{ post.updated_at|striptags|truncate(10,true,'')|replace("-","/") }}</p>
 
             <div class="post-content" data-type-cleanup="true">
               {{ post.content }}
@@ -149,6 +149,7 @@
           </div>
           
           <div>
+          <br>
           <!--Google Ad ここから-->
           <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 		  <ins class="adsbygoogle"
