@@ -211,10 +211,10 @@ p {
 a.brand,
 a.brand:link,
 a.brand:visited {
+  ont-family:"HelveticaNeue-UltraLight", "Helvetica Neue Ultra Light",'Josefin Sans', helvetica ,sans-serif;
   font-size: 20px;
   color: #ffffff;
   text-shadow: none;
-  text-transform: uppercase;
   letter-spacing: 1px;
   font-weight: 700;
 }
