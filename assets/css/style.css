@@ -211,12 +211,11 @@ p {
 a.brand,
 a.brand:link,
 a.brand:visited {
-  ont-family:"HelveticaNeue-UltraLight", "Helvetica Neue Ultra Light",'Josefin Sans', helvetica ,sans-serif;
-  font-size: 20px;
+  font-family:"HelveticaNeue-UltraLight", "Helvetica Neue Ultra Light",'Josefin Sans', helvetica ,sans-serif;
+  font-size: 30px;
   color: #ffffff;
   text-shadow: none;
   letter-spacing: 1px;
-  font-weight: 700;
 }
 a.brand:hover,
 a.brand:link:hover,
