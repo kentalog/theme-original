@@ -58,7 +58,7 @@
       <div class="navbar-inner">
         <div class="container">
           <div class="row">
-            <div class="span12 offset1">
+            <div class="span11 offset1">
               <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
@@ -87,7 +87,7 @@
 
     <div class="container">
       <div class="row">
-        <div class="span6 offset1">
+        <div class="span11 offset1">
 
         {% if is_home or is_tag %}
 
@@ -101,7 +101,7 @@
           {% if posts %}
           {% for post in posts %}
           <div class="row post">
-            <div class="span6">
+            <div class="span11">
               <h2><a href="{{ post.permalink }}">{{ post.title }}</a></h2>
 
               <div class="post-content" data-type-cleanup="true">
@@ -264,7 +264,7 @@
         </div>
 
         {% if not is_login %}
-          <span class="span12 offset1">
+          <span class="span11 offset1">
             <div class="bio">
               <img class="avatar" src="{{ site.avatar }}" alt="{{ site.author }}" />
               <p>{{ site.bio }}</p>
@@ -321,7 +321,7 @@
       </div>
 
       <div class="row">
-        <div class="span10 offset1">
+        <div class="span11 offset1">
           <footer>
             &copy; <a href="/">{{ site.name }}.com</a>
             {% if not is_login %}
